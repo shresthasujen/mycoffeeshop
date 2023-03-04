@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link href="/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
+          >
+            <a class="navbar-brand text-white" href="index.html">
+              <img
+                src="image/coffeelogo.png"
+                width="50px"
+                alt=""
+                class="navbar-logo"
+              />
+              Cup of Clay
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="text-white nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="text-white nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-white nav-link" href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="text-white nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="slider-wrapper">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="slider-img">
+              <img src="image/coffeeslider1.jpg" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="slider-img">
+              <img src="image/coffeeslider2.jpg" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-img">
+              <img src="image/coffeeslider4.jpg" alt="..." />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-white">
+            <div class="left-content">
+              <h1>Midnight Cappuccino</h1>
+              <small>
+                The Midnight Mint Mocha Cappuccino features<br />
+                extra dark cocoablended with Cappuccino Roast coffee
+              </small>
+              <h2 class="my-3">$8.10</h2>
+              <button type="button" class="btn btn-light">Buy now</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="right-content">
+              <img src="image/coffee.png" class="img-fluid" alt="..." />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row justify-content-end">
+              <div class="col-lg-10">
+                <div
+                  class="alert alert-primary d-flex align-items-center"
+                  role="alert"
+                >
+                  <img
+                    src="image/sip1.jpg"
+                    style="border-radius: 50%; padding-right: 8px"
+                    width="55px"
+                    alt=""
+                  />
+                  <div>
+                    <h6>Sippy cups</h6>
+                    <p>Are the new forms of ice coffee</p>
+                  </div>
+                </div>
+                <div
+                  class="alert alert-success d-flex align-items-center"
+                  role="alert"
+                >
+                  <img
+                    src="image/donut.jpg"
+                    style="border-radius: 160%; padding-right: 8px"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                  <div>
+                    <h6>Doughnut</h6>
+                    <p>Have a doughnut with a Cappuccino</p>
+                  </div>
+                </div>
+                <div
+                  class="alert alert-warning d-flex align-items-center"
+                  role="alert"
+                >
+                  <img
+                    src="image/cookies1.jpg"
+                    style="border-radius: 100%; padding-right: 8px"
+                    width="60px"
+                    alt=""
+                  />
+
+                  <div>
+                    <h6>Cookies</h6>
+                    <p>Enjoy our sugar free cookies</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h3>Coffee Roasters & Café</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="image-blog">
+                <img src="image/Cappuccino.jpg" alt="" />
+              </div>
+              <h4 class="py-3">Cappuccino</h4>
+              <p>A cappuccino a day keeps the grumpy away.</p>
+            </div>
+            <div class="col-md-4">
+              <div class="image-blog">
+                <img src="/image/espresso.jpg" alt="" />
+              </div>
+              <h4 class="py-3">Espresso</h4>
+              <p>Espresso is a miracle of chemistry in a cup.</p>
+            </div>
+            <div class="col-md-4">
+              <div class="image-blog">
+                <img src="/image/mocha.jpg" alt="" />
+              </div>
+              <h4 class="py-3">Mocha</h4>
+              <p>Life without love, chocolate, and coffee is just existence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="donut-1">
+      <img src="image/doughnut.jpg" alt="Snow" style="width: 100%" />
+      <div class="centered">Crunchy fried</div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-service2">
+              <h4 class="py-3">About us</h4>
+              <p class="text-secndary">
+                We have tested a number of registry fix and clean utilities and
+                present our top 3 list on our site for your convenience.”
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-service2">
+              <h4 class="py-3">Newsletter</h4>
+              <p class="text-secndary">Stay updated with our latest trends</p>
+              <form class="footer-1">
+                <input type="text" placeholder="Enter your email address" />
+                <button class="btn btn-primary me-md-1" type="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-service2">
+              <h4 class="py-3">Follow us</h4>
+              <p class="text-secndary">Let us be social</p>
+              <div class="follow">
+                <a href="https://www.facebook.com/sujen.cr7"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/su_zayn_shrestha/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/sujen-shrestha-8b857825a/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://twitter.com/Sujen42117770"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
