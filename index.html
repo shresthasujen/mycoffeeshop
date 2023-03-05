@@ -7,6 +7,13 @@
     <link href="/fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="fontawesome/css/brands.css" rel="stylesheet" />
     <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +44,9 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <i class="fas fab fa-facebook text-white"></i>
+              </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
@@ -50,15 +59,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="text-white nav-link" href="about.html">About</a>
+                  <a class="text-white nav-link" href="#content">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="text-white nav-link" href="services.html"
-                    >Services</a
-                  >
+                  <a class="text-white nav-link" href="#features">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="text-white nav-link" href="contact.html">Contact</a>
+                  <a class="text-white nav-link" href="#footer">Contact</a>
                 </li>
               </ul>
             </div>
@@ -109,7 +116,7 @@
         </button>
       </div>
     </section>
-    <section class="content">
+    <section class="content" id="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 text-white">
@@ -185,47 +192,57 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <h3>Coffee Roasters & Café</h3>
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="image-blog">
-                <img src="image/Cappuccino.jpg" alt="" />
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="animate">
+                <div class="image-blog">
+                  <img src="image/Cappuccino.jpg" alt="" />
+                </div>
+                <h4 class="mt-2 text-center text-white">Cappuccino</h4>
+                <p>A cappuccino a day keeps the grumpy away.</p>
               </div>
-              <h4 class="py-3">Cappuccino</h4>
-              <p>A cappuccino a day keeps the grumpy away.</p>
             </div>
-            <div class="col-md-4">
-              <div class="image-blog">
-                <img src="/image/espresso.jpg" alt="" />
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="animate">
+                <div class="image-blog">
+                  <img src="/image/espresso.jpg" alt="" />
+                </div>
+                <h4 class="mt-2 text-center text-white">Espresso</h4>
+                <p>Espresso is a miracle of chemistry in a cup.</p>
               </div>
-              <h4 class="py-3">Espresso</h4>
-              <p>Espresso is a miracle of chemistry in a cup.</p>
             </div>
-            <div class="col-md-4">
-              <div class="image-blog">
-                <img src="/image/mocha.jpg" alt="" />
+            <div class="col-md-4 col-sm-6 mb-3">
+              <div class="animate">
+                <div class="image-blog">
+                  <img src="/image/mocha.jpg" alt="" />
+                </div>
+                <h4 class="mt-2 text-center text-white">Mocha</h4>
+                <p>
+                  Life without love, chocolate, and coffee is just existence.
+                </p>
               </div>
-              <h4 class="py-3">Mocha</h4>
-              <p>Life without love, chocolate, and coffee is just existence.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="donut-1">
+    <section class="position-relative">
       <img src="image/doughnut.jpg" alt="Snow" style="width: 100%" />
-      <div class="centered">Crunchy fried</div>
+      <h1 class="position-absolute top-50 start-50 translate-middle text-white">
+        Crunchy cookies and Doughnuts
+      </h1>
     </section>
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <div class="card-service2">
-              <h4 class="py-3">About us</h4>
-              <p class="text-secndary">
+              <h4 class="py-3 text-white">About us</h4>
+              <p class="text-white">
                 We have tested a number of registry fix and clean utilities and
                 present our top 3 list on our site for your convenience.”
               </p>
@@ -233,30 +250,37 @@
           </div>
           <div class="col-md-4">
             <div class="card-service2">
-              <h4 class="py-3">Newsletter</h4>
-              <p class="text-secndary">Stay updated with our latest trends</p>
-              <form class="footer-1">
-                <input type="text" placeholder="Enter your email address" />
-                <button class="btn btn-primary me-md-1" type="button">Subscribe</button>
-              </form>
+              <h4 class="py-3 text-white">Newsletter</h4>
+              <p class="text-white">Stay updated with our latest trends</p>
+              <div class="d-flex align-items-center">
+                <div class="">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <button class="btn btn-primary ms-3">Subscribe</button>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card-service2">
-              <h4 class="py-3">Follow us</h4>
-              <p class="text-secndary">Let us be social</p>
-              <div class="follow">
+              <h4 class="py-3 text-white">Follow us</h4>
+              <p class="text-white">Let us be social</p>
+              <div class="d-flex gap-4">
                 <a href="https://www.facebook.com/sujen.cr7"
-                  ><i class="fa-brands fa-facebook"></i
+                  ><i class="fa-brands fa-facebook text-white"></i
                 ></a>
                 <a href="https://www.instagram.com/su_zayn_shrestha/"
-                  ><i class="fa-brands fa-instagram"></i
+                  ><i class="fa-brands fa-instagram text-white"></i
                 ></a>
                 <a href="https://www.linkedin.com/in/sujen-shrestha-8b857825a/"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin text-white"></i
                 ></a>
                 <a href="https://twitter.com/Sujen42117770"
-                  ><i class="fa-brands fa-twitter"></i
+                  ><i class="fa-brands fa-twitter text-white"></i
                 ></a>
               </div>
             </div>
@@ -264,6 +288,7 @@
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
